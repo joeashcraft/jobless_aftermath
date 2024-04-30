@@ -1,0 +1,3 @@
+---
+mock_modules:
+    - infra.ah_configuration.bogus_module

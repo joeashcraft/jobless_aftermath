@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -xeuo pipefail
+
+ansible-galaxy collection install infra.ah_configuration

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "==> test with empty mock_modules... expect success <=="
+ansible-lint -v --tags syntax-check --offline playbooks/
+
+echo "==> test with mock_modules defined... expect failure <=="
+ansible-lint -v -c .ansible-lint-mock --tags syntax-check --offline playbooks/
